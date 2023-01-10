@@ -1,0 +1,109 @@
+/* importing google font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*  {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('/images/background_image.png');
+
+}
+:root {
+    --box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px -3px rgba(0, 0, 0, 0.19);
+    --background: rgba(225, 225, 225, 0.05);
+    --border: rgba(225, 225, 225, 0.1);
+    --box-shadow2: 0 25px 45px rgba(0, 0, 0, 0.1);
+
+}
+::selection {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.start_btn,
+.info_box,
+.quiz_box,
+.result_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--box-shadow);
+}
+.info_box.activeInfo,
+.quiz_box.activeQuize,
+.result_box.qactiveResult {
+opacity: 1;
+z-index: 5;
+pointer-events: auto;
+transform: translate(-50%, -50%) scale(1);
+}
+
+button {
+    color: #fff;
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    box-shadow: var(--box-shadow2);
+    backdrop-filter: blur(20px);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.start_btn button {
+    padding: 15px 100px;
+
+}
+
+.info_box {
+    width: 800px;
+    color: #fff;
+    line-height: 2;
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    box-shadow: var(--box-shadow2);
+    backdrop-filter: blur(20px);
+    box-shadow: var(--box-shadow2);
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    padding: 2rem 4rem;
+
+}
+
+.info_box .info_title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info_list {
+    padding: 15px 30px;
+}
+
+.info_box .info_list .info {
+    margin: 5px 0;
+    font-size: 18px;
+
+}
+
+.info_box .info_list .info.span {
+font-weight: 600;
+color: #555;
+}
