@@ -22,17 +22,19 @@ continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide the info box
     quiz_box.classList.add("activeQuiz"); //hide the info box
     showQuestions(0);
+    
 
 }
 
 let que_count = 0;
 
+
 const next_btn = quiz_box.querySelector(".next_btn");
 
 //If next button  clicked
 next_btn.onclick = ()=>{
-    if(que_count < question.length - 1){
-        que_count++
+    if(que_count > questions.length - 1){
+        que_count++;
         showQuestions(que_count);
     }else{
         console.log("Questions Completed");
@@ -55,5 +57,4 @@ function showQuestions(index){
     que_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
 }
-
 
