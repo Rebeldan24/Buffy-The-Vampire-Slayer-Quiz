@@ -3,8 +3,8 @@
 let questions = [
     {
         numb: 1,
-        question: "What does HTML stand for ?"
-        answer: "Hyper Text markup language"
+        question: "What does HTML stand for ?",
+        answer: "Hyper Text markup language",
         options: [
             "Hyper Text Prep",
             "Hyper Text markup language",
@@ -22,7 +22,7 @@ let questions = [
             "Hyper Text Prep",
             "Hyper Text markup language",
             "Hyper Text Language",
-            "Cascading Style Sheet",
+            "Cascading Style Sheet"
         ]
 
     },
@@ -34,7 +34,7 @@ let questions = [
             "Hypertext Preprocessor",
             "Hyper Text markup language",
             "Hyper Text Language",
-            "Cascading Style Sheet",
+            "Cascading Style Sheet"
         ]
 
     },
@@ -46,7 +46,7 @@ let questions = [
             "Hypertext Preprocessor",
             "Hyper Text markup language",
             "Hyper Text Language",
-            "Structured Query Language",
+            "Structured Query Language"
         ]
 
     },
@@ -58,7 +58,7 @@ let questions = [
             "Extensive markup Language",
             "Hyper Text markup language",
             "Hyper Text Language",
-            "Structured Query Language",
+            "Structured Query Language"
         ]
 
     },
