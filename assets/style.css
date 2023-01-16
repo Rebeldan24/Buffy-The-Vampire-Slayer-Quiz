@@ -143,5 +143,131 @@ body {
 }
 
 #quiz #quiz_header #timer h6 {
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    margin: 0 10px;
+
     
 }
+
+#quiz #quiz_header #timer #time {
+
+    height: 44px;
+    width: 50px;
+    background: #fff;
+    color: #f69d9e;
+    border: 1px solid #b0c4d8;
+    border-radius: 15px 7px;
+    margin: 2px 0 0 27px;
+
+
+}
+
+/* Quiz Questions*/
+
+#quiz #question {
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+#quiz #question h2 {
+
+    font-size: 27px;
+}
+
+#quiz #question h2:first-child {
+    margin: 0 10px 0 5px;
+}
+
+#quiz #optionList {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 160px;
+}
+
+#quiz #optionList h4 {
+
+    height: 50px;
+    width: 535px;
+    background: #ff5235;
+    line-height: 50px;
+    margin: 5px 0;
+    border-radius: 7px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+
+}
+
+#quiz #optionList h4:hover {
+
+    background: #391e3a;
+} 
+
+#quiz #optionList .active {
+
+    background: #e91e3a;
+} 
+
+#quiz #optionList .disabled {
+
+    pointer-events: none;
+} 
+
+/* Answer Section*/
+
+#quiz #answersSection {
+
+    height: 60px;
+    width: 100%;
+    background: #fafafc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px 0;
+}
+
+#quiz #answersSection h3 {
+
+    margin: 0px 30px;
+    /*Display: none;*/
+}
+
+#quiz #answersSection h3:last-child {
+
+    height: 40px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    background: #ff5235;
+    position: absolute;
+    right: 0;
+    color: #e7f1fa;
+    border: 1px solid #b0c4d8;
+    font-size: 18px;
+    border-radius: 20px 5px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#quiz #answersSection h3:hover {
+
+    background: #e91e3a;
+}
+
+#quiz #answersSection h3:first-child:hover {
+
+    background: none;
+}
+
