@@ -126,3 +126,22 @@ body {
     margin: 0 20px;
     color: #ff5235;
 }
+
+#quiz #quiz_header #timer {
+
+    height: 50px;
+    width: 200px;
+    background: #ff5235;
+    color: #e7f1fa;
+    border: 1px solid #b0c4d8;
+    font-size: 18px;
+    border-radius: 20px 5px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+}
+
+#quiz #quiz_header #timer h6 {
+    
+}
